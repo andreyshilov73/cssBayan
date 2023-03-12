@@ -33,3 +33,29 @@ body {
 }
 
 .meme:focus {background-color: aqua;}
+
+@media (min-width:120em) {
+    #main p{
+        font-size: xx-large;
+    }
+}
+
+@media (min-width:21em) and (max-width:52em) {
+    #main p{
+        font-size: x-large;
+    }
+    .meme:hover img{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (max-width:20em) {
+    #main p{
+        font-size: x-small;
+    }
+    .meme:hover img{
+        width: 40%;
+        height: 40%;
+    }
+}
