@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+    background-color: rgb(255, 251, 190);
+}
+
+.meme p{
+    color: blue;
+    font-size: 1.35em;
+}
+
+.meme img {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.meme:hover {cursor: pointer;}
+
+.meme:hover img {
+    width: 20%;
+    height: 20%;
+    visibility: visible;
+    transition: 1s;
+}
+
+.meme:focus {background-color: aqua;}
+
+@media (min-width:120em) {
+    #main p{
+        font-size: xx-large;
+    }
+}
+
+@media (min-width:21em) and (max-width:52em) {
+    #main p{
+        font-size: x-large;
+    }
+    .meme:hover img{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (max-width:20em) {
+    #main p{
+        font-size: x-small;
+    }
+    .meme:hover img{
+        width: 40%;
+        height: 40%;
+    }
+}
