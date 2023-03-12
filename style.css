@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight:bolder;
+}
+
+#main {
+    margin: 2% 5% 0 5%;
+}
+
+#main:hover p{
+    color: rgb(0, 0, 0);
+}
+
+.meme p{
+    color: blue;
+}
+
+.meme img {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.meme:hover img {
+    width: 20%;
+    height: 20%;
+    visibility: visible;
+    transition: 1s;
+}
+
